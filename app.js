@@ -15,14 +15,7 @@ var express     =   require("express"),
         indexRoutes = require("./routes/index");
  
 // mongoose.connect('mongodb://localhost:27017/yelp_camp_v4', { useNewUrlParser: true }); 
- mongoose.connect('mongodb:praveen:nagu1996@ds041377.mlab.com:41377/camp007', { useNewUrlParser: true });
-//  mongoose.connect(ds041377.mlab.com, {
-//   auth: {
-//     user: praveen,
-//     password: nagu1996
-//   },
-//   { useNewUrlParser: true }
-// });
+ mongoose.connect('mongodb://praveen:nagu1996@ds041377.mlab.com:41377/camp007', { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
